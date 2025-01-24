@@ -5,12 +5,16 @@ body{
     display: flex;
     flex-direction: column;
 }
-.sticky-header>img{
-    width: 142px;
-    height: 24px;
-}
 
 .sticky-header{
+    position: sticky;
+    background-color: white;
+    top: 0; 
+    /*Sticks to the top of the viewport */
+
+    /* z-index: 1000; */
+    
+    height: 80px;
     display: flex;
     /* flex-direction: row; */
     justify-content: space-between;
@@ -23,13 +27,22 @@ body{
     align-items: center;
     align-content: stretch;
 }
-.headerlinks{
-    /* display: flex; */
-    /* align-items: center; */
+.sticky-header>img{
+    width: 142px;
+    height: 24px;
+    margin-left: 80px;
 }
 
+.headerlinks{
+    display: flex;
+    align-items: center;
+}
 
-a{
+.headerlinks>a{
+    /* display: flex; */
+    /* align-items: center; */
+    margin-left: 20px;
+    margin-right: 20px;
     /* padding-top: 200px; */
     /* margin-top: 200px; */
     font-family: "Raleway";
@@ -71,6 +84,7 @@ h2{
 ul{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     /* align-content: space-between; */
 }
 li{
@@ -94,17 +108,23 @@ li{
 }
 
 .imageline1 img {
-    flex: 1 1 calc(25% - 20px); /* Each image takes up 25% of the row minus margins */
+    flex: 1 1 calc(25% - 20px); 
+    /* Each image takes up 25% of the row minus margins */
+
     align-self: center;
     justify-content: center;
     margin: 10px; /* Add margin around images */
     height: 50%; /* Maintain aspect ratio */
     /* max-width: 20%; Ensure images do not exceed their container */
-    max-width: 300px;
+    /* max-width: 300px; */
     /* row-gap: 10px; */
     /* column-gap: 20px; */
     flex-grow: 1;
     flex-shrink: 1;
+    /* object-fit: cover; */
+    max-width: 100%; /* Ensures images don't exceed their container width */
+    min-width: 50px; /* Minimum width for the images */
+    max-width: 300px; /* Maximum width for the images */
 
 }
 
