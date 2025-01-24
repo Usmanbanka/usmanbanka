@@ -1,0 +1,19 @@
+.imageline1{
+    /* background-color: yellow; */
+    height: 370px;
+    width: 100%;
+    background-color: red;
+    display: flex;
+    justify-content:space-between;
+    ;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+    /* justify-content:stretch; */
+}
+.imageline1 img{
+
+    height: 300px;
+    /* width: auto; */
+    /* min-width: 400px; */
+    min-width: 20px;
+}
