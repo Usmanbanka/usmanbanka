@@ -38,6 +38,12 @@ body{
     align-items: center;
 }
 
+@media (max-width: 600px) {
+    .headerlinks {
+      display: none;
+    }
+  }
+
 .headerlinks>a{
     /* display: flex; */
     /* align-items: center; */
@@ -101,7 +107,7 @@ li{
     justify-content: space-around;
     margin: 0; /* Optional: Add negative margin to offset padding */
     row-gap: 1px;
-    column-gap: 2px;
+    column-gap: 1px;
     flex-grow: 1;
 
     
